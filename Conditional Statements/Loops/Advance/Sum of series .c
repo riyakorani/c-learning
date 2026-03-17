@@ -1,0 +1,13 @@
+// Sum of series (1 + 1/2 + ... + 1/n)
+
+#include <stdio.h>
+int main() {
+    int n;
+    float sum=0;
+    printf("Enter N: ");
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++)
+        sum += 1.0/i;
+    printf("Sum = %.2f\n", sum);
+    return 0;
+}
